@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3029D23C656D73641B429D48 /* Pods_MHWDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F15A8C852EFEE19C501394F /* Pods_MHWDatabase.framework */; };
 		B1295145207003FA00ABEB4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1295144207003FA00ABEB4D /* AppDelegate.swift */; };
 		B1295147207003FA00ABEB4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1295146207003FA00ABEB4D /* ViewController.swift */; };
 		B129514A207003FA00ABEB4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1295148207003FA00ABEB4D /* Main.storyboard */; };
@@ -14,6 +15,16 @@
 		B129514F207003FA00ABEB4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B129514D207003FA00ABEB4D /* LaunchScreen.storyboard */; };
 		B129515A207003FA00ABEB4D /* MHWDatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1295159207003FA00ABEB4D /* MHWDatabaseTests.swift */; };
 		B1295165207003FA00ABEB4D /* MHWDatabaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1295164207003FA00ABEB4D /* MHWDatabaseUITests.swift */; };
+		B16DCF102070089C00134BE3 /* mhw.db in Resources */ = {isa = PBXBuildFile; fileRef = B16DCF0F2070089C00134BE3 /* mhw.db */; };
+		B17E01C8207017E00051E75A /* MonsterCompendium.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17E01C7207017E00051E75A /* MonsterCompendium.swift */; };
+		B17E01CA207017F60051E75A /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17E01C9207017F60051E75A /* Monster.swift */; };
+		B1879610207023AE0094BD49 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B187960F207023AE0094BD49 /* SearchTableViewController.swift */; };
+		B1879613207025EF0094BD49 /* Armor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1879612207025EF0094BD49 /* Armor.swift */; };
+		B1879615207026FE0094BD49 /* MHEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1879614207026FE0094BD49 /* MHEntity.swift */; };
+		B187961720702F340094BD49 /* Armory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B187961620702F340094BD49 /* Armory.swift */; };
+		B187961920702FBB0094BD49 /* ArmoryDataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B187961820702FBB0094BD49 /* ArmoryDataAccess.swift */; };
+		B1DEA6FA207019D6004AD091 /* DBAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DEA6F9207019D6004AD091 /* DBAccess.swift */; };
+		B1DEA6FC20701B47004AD091 /* MonsterDBAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DEA6FB20701B47004AD091 /* MonsterDBAccess.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F15A8C852EFEE19C501394F /* Pods_MHWDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MHWDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1295141207003FA00ABEB4D /* MHWDatabase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHWDatabase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1295144207003FA00ABEB4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1295146207003FA00ABEB4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +59,19 @@
 		B1295160207003FA00ABEB4D /* MHWDatabaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MHWDatabaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1295164207003FA00ABEB4D /* MHWDatabaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHWDatabaseUITests.swift; sourceTree = "<group>"; };
 		B1295166207003FA00ABEB4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B16DCF0F2070089C00134BE3 /* mhw.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = mhw.db; path = DB/mhw.db; sourceTree = "<group>"; };
+		B17E01C6207016B90051E75A /* MHWDatabase-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MHWDatabase-BridgingHeader.h"; sourceTree = SOURCE_ROOT; };
+		B17E01C7207017E00051E75A /* MonsterCompendium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterCompendium.swift; sourceTree = "<group>"; };
+		B17E01C9207017F60051E75A /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
+		B187960F207023AE0094BD49 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		B1879612207025EF0094BD49 /* Armor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Armor.swift; sourceTree = "<group>"; };
+		B1879614207026FE0094BD49 /* MHEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHEntity.swift; sourceTree = "<group>"; };
+		B187961620702F340094BD49 /* Armory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Armory.swift; sourceTree = "<group>"; };
+		B187961820702FBB0094BD49 /* ArmoryDataAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmoryDataAccess.swift; sourceTree = "<group>"; };
+		B1DEA6F9207019D6004AD091 /* DBAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBAccess.swift; sourceTree = "<group>"; };
+		B1DEA6FB20701B47004AD091 /* MonsterDBAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterDBAccess.swift; sourceTree = "<group>"; };
+		C3E8080104BBFC078BE1D02A /* Pods-MHWDatabase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHWDatabase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MHWDatabase/Pods-MHWDatabase.debug.xcconfig"; sourceTree = "<group>"; };
+		ECDD500BE37E3AA826F23557 /* Pods-MHWDatabase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHWDatabase.release.xcconfig"; path = "Pods/Target Support Files/Pods-MHWDatabase/Pods-MHWDatabase.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3029D23C656D73641B429D48 /* Pods_MHWDatabase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +100,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4424AE54CB3A9A050C03AA2D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3E8080104BBFC078BE1D02A /* Pods-MHWDatabase.debug.xcconfig */,
+				ECDD500BE37E3AA826F23557 /* Pods-MHWDatabase.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B1295138207003FA00ABEB4D = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +116,8 @@
 				B1295158207003FA00ABEB4D /* MHWDatabaseTests */,
 				B1295163207003FA00ABEB4D /* MHWDatabaseUITests */,
 				B1295142207003FA00ABEB4D /* Products */,
+				4424AE54CB3A9A050C03AA2D /* Pods */,
+				B9DB0C7D0AD9AB263A89E470 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +134,19 @@
 		B1295143207003FA00ABEB4D /* MHWDatabase */ = {
 			isa = PBXGroup;
 			children = (
+				B18796112070258B0094BD49 /* Armory */,
+				B1DEA6F9207019D6004AD091 /* DBAccess.swift */,
+				B1DEA6F8207019B6004AD091 /* Monster Compendium */,
 				B1295144207003FA00ABEB4D /* AppDelegate.swift */,
 				B1295146207003FA00ABEB4D /* ViewController.swift */,
+				B16DCF0F2070089C00134BE3 /* mhw.db */,
 				B1295148207003FA00ABEB4D /* Main.storyboard */,
 				B129514B207003FA00ABEB4D /* Assets.xcassets */,
 				B129514D207003FA00ABEB4D /* LaunchScreen.storyboard */,
 				B1295150207003FA00ABEB4D /* Info.plist */,
+				B17E01C6207016B90051E75A /* MHWDatabase-BridgingHeader.h */,
+				B187960F207023AE0094BD49 /* SearchTableViewController.swift */,
+				B1879614207026FE0094BD49 /* MHEntity.swift */,
 			);
 			path = MHWDatabase;
 			sourceTree = "<group>";
@@ -125,6 +169,34 @@
 			path = MHWDatabaseUITests;
 			sourceTree = "<group>";
 		};
+		B18796112070258B0094BD49 /* Armory */ = {
+			isa = PBXGroup;
+			children = (
+				B1879612207025EF0094BD49 /* Armor.swift */,
+				B187961620702F340094BD49 /* Armory.swift */,
+				B187961820702FBB0094BD49 /* ArmoryDataAccess.swift */,
+			);
+			path = Armory;
+			sourceTree = "<group>";
+		};
+		B1DEA6F8207019B6004AD091 /* Monster Compendium */ = {
+			isa = PBXGroup;
+			children = (
+				B17E01C7207017E00051E75A /* MonsterCompendium.swift */,
+				B17E01C9207017F60051E75A /* Monster.swift */,
+				B1DEA6FB20701B47004AD091 /* MonsterDBAccess.swift */,
+			);
+			path = "Monster Compendium";
+			sourceTree = "<group>";
+		};
+		B9DB0C7D0AD9AB263A89E470 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F15A8C852EFEE19C501394F /* Pods_MHWDatabase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1295169207003FA00ABEB4D /* Build configuration list for PBXNativeTarget "MHWDatabase" */;
 			buildPhases = (
+				5FE963F10AADAEEA63649FEF /* [CP] Check Pods Manifest.lock */,
 				B129513D207003FA00ABEB4D /* Sources */,
 				B129513E207003FA00ABEB4D /* Frameworks */,
 				B129513F207003FA00ABEB4D /* Resources */,
+				B38E8C8C20C1F5A083A1E82D /* [CP] Embed Pods Frameworks */,
+				589ACDE2162FEA415AEC1B25 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,6 +309,7 @@
 			files = (
 				B129514F207003FA00ABEB4D /* LaunchScreen.storyboard in Resources */,
 				B129514C207003FA00ABEB4D /* Assets.xcassets in Resources */,
+				B16DCF102070089C00134BE3 /* mhw.db in Resources */,
 				B129514A207003FA00ABEB4D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,13 +330,80 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		589ACDE2162FEA415AEC1B25 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MHWDatabase/Pods-MHWDatabase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FE963F10AADAEEA63649FEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MHWDatabase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B38E8C8C20C1F5A083A1E82D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MHWDatabase/Pods-MHWDatabase-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Dip/Dip.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Dip.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MHWDatabase/Pods-MHWDatabase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B129513D207003FA00ABEB4D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1DEA6FC20701B47004AD091 /* MonsterDBAccess.swift in Sources */,
+				B17E01CA207017F60051E75A /* Monster.swift in Sources */,
+				B1DEA6FA207019D6004AD091 /* DBAccess.swift in Sources */,
+				B1879615207026FE0094BD49 /* MHEntity.swift in Sources */,
+				B1879610207023AE0094BD49 /* SearchTableViewController.swift in Sources */,
 				B1295147207003FA00ABEB4D /* ViewController.swift in Sources */,
+				B17E01C8207017E00051E75A /* MonsterCompendium.swift in Sources */,
+				B187961720702F340094BD49 /* Armory.swift in Sources */,
 				B1295145207003FA00ABEB4D /* AppDelegate.swift in Sources */,
+				B1879613207025EF0094BD49 /* Armor.swift in Sources */,
+				B187961920702FBB0094BD49 /* ArmoryDataAccess.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +567,7 @@
 		};
 		B129516A207003FA00ABEB4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3E8080104BBFC078BE1D02A /* Pods-MHWDatabase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -432,6 +576,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MHW.MHWDatabase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MHWDatabase-BridgingHeader.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -439,6 +584,7 @@
 		};
 		B129516B207003FA00ABEB4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECDD500BE37E3AA826F23557 /* Pods-MHWDatabase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +593,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MHW.MHWDatabase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MHWDatabase-BridgingHeader.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
