@@ -11,11 +11,8 @@ import RxSwift
 
 class SearchTableViewController: UITableViewController {
     let compendium = MonsterCompendium()
-    let armory = Armory()
-    var monsters = [Monster]()
-    var armor = [Armor]()
-    var monsterPublish: PublishSubject<Monster>!
-    var armorPublish: PublishSubject<Armor>!
+    var weapons = [Weapon]()
+    var weaponPublish: PublishSubject<Weapon>!
     var disposeBag = DisposeBag()
 
     override func viewDidLoad() {
@@ -26,20 +23,13 @@ class SearchTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        self.monsterPublish = self.compendium.dataAccess.getMonsters(chunk: nil)
-        self.armorPublish = self.armory.dataAccess.getArmor(chunk: nil)
-        self.armorPublish.asObservable().subscribe(onNext: { (armor) in
+        self.weaponPublish = WeaponShop().getWeapons(chunk: nil)
+        self.weaponPublish.asObservable().subscribe(onNext: { (weapon) in
             DispatchQueue.main.async {
-                self.armor.append(armor)
+                self.weapons.append(weapon)
                 self.tableView.reloadData()
             }
         }).disposed(by: self.disposeBag)
-
-//        self.monsterPublish.asObservable().subscribeOn(ConcurrentMainScheduler.instance).subscribe(onNext: { (monster) in
-//            self.monsters.append(monster)
-//            self.tableView.reloadData()
-//        }).disposed(by: self.disposeBag)
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,15 +44,15 @@ class SearchTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.armor.count
+        return self.weapons.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let armor = self.armor[indexPath.row]
+        let weapon = self.weapons[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "monsterCell", for: indexPath)
-        cell.textLabel?.text = armor.name
-        cell.detailTextLabel?.text = "\(armor.rarity) \(armor.armorType)"
+        cell.textLabel?.text = weapon.name
+        cell.detailTextLabel?.text = "\(weapon.weaponType) \(weapon.attack)"
         // Configure the cell...
 
         return cell

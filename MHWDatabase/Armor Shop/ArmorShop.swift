@@ -9,11 +9,11 @@
 import UIKit
 import RxSwift
 
-protocol ArmoryDataAccess {
+protocol ArmorShopDataAccess {
     func getArmor(chunk: [Int]?) -> PublishSubject<Armor>?
 }
-class Armory: NSObject {
-    var dataAccess: ArmoryDataAccess = DBAccess()
+class ArmorShop: NSObject {
+    var dataAccess: ArmorShopDataAccess = DBAccess()
 
     func getArmor(chunk: [Int]?) -> PublishSubject<Armor>? {
         return self.dataAccess.getArmor(chunk: chunk)

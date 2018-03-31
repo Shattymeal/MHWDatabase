@@ -21,8 +21,11 @@
 		B1879610207023AE0094BD49 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B187960F207023AE0094BD49 /* SearchTableViewController.swift */; };
 		B1879613207025EF0094BD49 /* Armor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1879612207025EF0094BD49 /* Armor.swift */; };
 		B1879615207026FE0094BD49 /* MHEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1879614207026FE0094BD49 /* MHEntity.swift */; };
-		B187961720702F340094BD49 /* Armory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B187961620702F340094BD49 /* Armory.swift */; };
-		B187961920702FBB0094BD49 /* ArmoryDataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B187961820702FBB0094BD49 /* ArmoryDataAccess.swift */; };
+		B187961720702F340094BD49 /* ArmorShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = B187961620702F340094BD49 /* ArmorShop.swift */; };
+		B187961920702FBB0094BD49 /* ArmorShopDataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B187961820702FBB0094BD49 /* ArmorShopDataAccess.swift */; };
+		B187961C207036BA0094BD49 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B187961B207036BA0094BD49 /* Weapon.swift */; };
+		B187961E207039520094BD49 /* WeaponShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = B187961D207039520094BD49 /* WeaponShop.swift */; };
+		B187962020703A720094BD49 /* WeaponShopDataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B187961F20703A720094BD49 /* WeaponShopDataAccess.swift */; };
 		B1DEA6FA207019D6004AD091 /* DBAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DEA6F9207019D6004AD091 /* DBAccess.swift */; };
 		B1DEA6FC20701B47004AD091 /* MonsterDBAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DEA6FB20701B47004AD091 /* MonsterDBAccess.swift */; };
 /* End PBXBuildFile section */
@@ -66,8 +69,11 @@
 		B187960F207023AE0094BD49 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		B1879612207025EF0094BD49 /* Armor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Armor.swift; sourceTree = "<group>"; };
 		B1879614207026FE0094BD49 /* MHEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHEntity.swift; sourceTree = "<group>"; };
-		B187961620702F340094BD49 /* Armory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Armory.swift; sourceTree = "<group>"; };
-		B187961820702FBB0094BD49 /* ArmoryDataAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmoryDataAccess.swift; sourceTree = "<group>"; };
+		B187961620702F340094BD49 /* ArmorShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmorShop.swift; sourceTree = "<group>"; };
+		B187961820702FBB0094BD49 /* ArmorShopDataAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmorShopDataAccess.swift; sourceTree = "<group>"; };
+		B187961B207036BA0094BD49 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
+		B187961D207039520094BD49 /* WeaponShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponShop.swift; sourceTree = "<group>"; };
+		B187961F20703A720094BD49 /* WeaponShopDataAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponShopDataAccess.swift; sourceTree = "<group>"; };
 		B1DEA6F9207019D6004AD091 /* DBAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBAccess.swift; sourceTree = "<group>"; };
 		B1DEA6FB20701B47004AD091 /* MonsterDBAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterDBAccess.swift; sourceTree = "<group>"; };
 		C3E8080104BBFC078BE1D02A /* Pods-MHWDatabase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHWDatabase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MHWDatabase/Pods-MHWDatabase.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,8 +140,10 @@
 		B1295143207003FA00ABEB4D /* MHWDatabase */ = {
 			isa = PBXGroup;
 			children = (
-				B18796112070258B0094BD49 /* Armory */,
+				B187961A207036100094BD49 /* Weapon Shop */,
+				B1879614207026FE0094BD49 /* MHEntity.swift */,
 				B1DEA6F9207019D6004AD091 /* DBAccess.swift */,
+				B18796112070258B0094BD49 /* Armor Shop */,
 				B1DEA6F8207019B6004AD091 /* Monster Compendium */,
 				B1295144207003FA00ABEB4D /* AppDelegate.swift */,
 				B1295146207003FA00ABEB4D /* ViewController.swift */,
@@ -146,7 +154,6 @@
 				B1295150207003FA00ABEB4D /* Info.plist */,
 				B17E01C6207016B90051E75A /* MHWDatabase-BridgingHeader.h */,
 				B187960F207023AE0094BD49 /* SearchTableViewController.swift */,
-				B1879614207026FE0094BD49 /* MHEntity.swift */,
 			);
 			path = MHWDatabase;
 			sourceTree = "<group>";
@@ -169,14 +176,24 @@
 			path = MHWDatabaseUITests;
 			sourceTree = "<group>";
 		};
-		B18796112070258B0094BD49 /* Armory */ = {
+		B18796112070258B0094BD49 /* Armor Shop */ = {
 			isa = PBXGroup;
 			children = (
 				B1879612207025EF0094BD49 /* Armor.swift */,
-				B187961620702F340094BD49 /* Armory.swift */,
-				B187961820702FBB0094BD49 /* ArmoryDataAccess.swift */,
+				B187961620702F340094BD49 /* ArmorShop.swift */,
+				B187961820702FBB0094BD49 /* ArmorShopDataAccess.swift */,
 			);
-			path = Armory;
+			path = "Armor Shop";
+			sourceTree = "<group>";
+		};
+		B187961A207036100094BD49 /* Weapon Shop */ = {
+			isa = PBXGroup;
+			children = (
+				B187961B207036BA0094BD49 /* Weapon.swift */,
+				B187961D207039520094BD49 /* WeaponShop.swift */,
+				B187961F20703A720094BD49 /* WeaponShopDataAccess.swift */,
+			);
+			path = "Weapon Shop";
 			sourceTree = "<group>";
 		};
 		B1DEA6F8207019B6004AD091 /* Monster Compendium */ = {
@@ -394,16 +411,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1DEA6FC20701B47004AD091 /* MonsterDBAccess.swift in Sources */,
+				B187962020703A720094BD49 /* WeaponShopDataAccess.swift in Sources */,
 				B17E01CA207017F60051E75A /* Monster.swift in Sources */,
 				B1DEA6FA207019D6004AD091 /* DBAccess.swift in Sources */,
 				B1879615207026FE0094BD49 /* MHEntity.swift in Sources */,
 				B1879610207023AE0094BD49 /* SearchTableViewController.swift in Sources */,
+				B187961C207036BA0094BD49 /* Weapon.swift in Sources */,
 				B1295147207003FA00ABEB4D /* ViewController.swift in Sources */,
+				B187961E207039520094BD49 /* WeaponShop.swift in Sources */,
 				B17E01C8207017E00051E75A /* MonsterCompendium.swift in Sources */,
-				B187961720702F340094BD49 /* Armory.swift in Sources */,
+				B187961720702F340094BD49 /* ArmorShop.swift in Sources */,
 				B1295145207003FA00ABEB4D /* AppDelegate.swift in Sources */,
 				B1879613207025EF0094BD49 /* Armor.swift in Sources */,
-				B187961920702FBB0094BD49 /* ArmoryDataAccess.swift in Sources */,
+				B187961920702FBB0094BD49 /* ArmorShopDataAccess.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  ArmoryDataAccess.swift
+//  ArmorShopDataAccess.swift
 //  MHWDatabase
 //
 //  Created by Neil Shetty on 3/31/18.
@@ -10,7 +10,7 @@ import UIKit
 import FMDB
 import RxSwift
 
-extension DBAccess: ArmoryDataAccess {
+extension DBAccess: ArmorShopDataAccess {
     func getArmor(chunk: [Int]?) -> PublishSubject<Armor>? {
         let armorPublish = self.getMHEntity(entityType: Armor.self)
         return armorPublish
