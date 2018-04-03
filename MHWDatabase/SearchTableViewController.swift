@@ -23,7 +23,7 @@ class SearchTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        self.weaponPublish = WeaponShop().getWeapons(chunk: nil)
+        self.weaponPublish = WeaponShop().getWeapons(ids: [1,2,3,4,5,6,7])
         self.weaponPublish.asObservable().subscribe(onNext: { (weapon) in
             DispatchQueue.main.async {
                 self.weapons.append(weapon)

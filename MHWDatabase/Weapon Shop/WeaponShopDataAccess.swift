@@ -10,8 +10,8 @@ import UIKit
 import RxSwift
 
 extension DBAccess: WeaponShopDataAccess {
-    func getWeapons(chunk: [Int]?) -> PublishSubject<Weapon>? {
-        let weaponPublish = self.getMHEntity(entityType: Weapon.self)
+    func getWeapons(ids: [Int]?) -> PublishSubject<Weapon>? {
+        let weaponPublish = self.getMHEntity(entityType: Weapon.self, ids: ids)
         return weaponPublish
     }
 }

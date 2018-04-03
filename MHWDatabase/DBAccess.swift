@@ -15,16 +15,26 @@ class DBAccess: NSObject {
         return FMDatabaseQueue.init(path: dbPath)
     }()
     
-    func getMHEntity<T: MHEntity>(entityType: T.Type) -> PublishSubject<T>? where T: Queryable {
+    func getMHEntity<T: MHEntity>(entityType: T.Type, ids: [Int]?) -> PublishSubject<T>? where T: Queryable {
         let entityPublish = PublishSubject<T>()
         
         DispatchQueue.global(qos: .userInteractive).async {
             self.mhwDBQueue.inDatabase { (mhwDB) in
                 do {
-                    let rs = try mhwDB.executeQuery(entityType.selectQuery, values: nil)
+                    var rs: FMResultSet?
+                    if ids != nil {
+                        var questionMarks = ids!.reduce("", { (result: String, _) -> String in
+                            return result + "?,"
+                        })
+                        _ = questionMarks.removeLast()
+                        let inStatement = " WHERE entityID IN (\(questionMarks))"
+                        rs = mhwDB.executeQuery(entityType.selectQuery + inStatement, withArgumentsIn: ids!)
+                    } else {
+                        rs = try mhwDB.executeQuery(entityType.selectQuery, values: nil)
+                    }
                     
-                    while rs.next() {
-                        guard let dbDict = rs.resultDictionary else {
+                    while rs?.next() == true {
+                        guard let dbDict = rs?.resultDictionary else {
                             continue
                         }
                         

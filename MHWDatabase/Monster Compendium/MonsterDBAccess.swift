@@ -11,8 +11,8 @@ import FMDB
 import RxSwift
 
 extension DBAccess: MonsterDataAccess {
-    func getMonsters(chunk: [Int]?) -> PublishSubject<Monster>? {
-        let monsterPublish = self.getMHEntity(entityType: Monster.self)
+    func getMonsters(ids: [Int]?) -> PublishSubject<Monster>? {
+        let monsterPublish = self.getMHEntity(entityType: Monster.self, ids: ids)
         return monsterPublish
     }
 }

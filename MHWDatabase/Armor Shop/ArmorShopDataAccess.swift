@@ -11,8 +11,8 @@ import FMDB
 import RxSwift
 
 extension DBAccess: ArmorShopDataAccess {
-    func getArmor(chunk: [Int]?) -> PublishSubject<Armor>? {
-        let armorPublish = self.getMHEntity(entityType: Armor.self)
+    func getArmor(ids: [Int]?) -> PublishSubject<Armor>? {
+        let armorPublish = self.getMHEntity(entityType: Armor.self, ids: ids)
         return armorPublish
     }
 }

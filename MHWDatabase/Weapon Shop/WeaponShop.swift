@@ -10,12 +10,12 @@ import UIKit
 import RxSwift
 
 protocol WeaponShopDataAccess {
-    func getWeapons(chunk: [Int]?) -> PublishSubject<Weapon>?
+    func getWeapons(ids: [Int]?) -> PublishSubject<Weapon>?
 }
 class WeaponShop: NSObject {
     var dataAccess: WeaponShopDataAccess = DBAccess()
     
-    func getWeapons(chunk: [Int]?) -> PublishSubject<Weapon>? {
-        return self.dataAccess.getWeapons(chunk: chunk)
+    func getWeapons(ids: [Int]?) -> PublishSubject<Weapon>? {
+        return self.dataAccess.getWeapons(ids: ids)
     }
 }

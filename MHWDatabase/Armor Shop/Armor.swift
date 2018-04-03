@@ -9,7 +9,7 @@
 import UIKit
 
 class Armor: MHEntity, Queryable {
-    static var selectQuery: String = "select a.id, a.rarity, a.armor_type, a.armorset_id, aTx.name from armor a inner join armor_text aTx on a.id = aTx.id"
+    static var selectQuery: String = "select a.id entityID, a.rarity, a.armor_type, a.armorset_id, aTx.name from armor a inner join armor_text aTx on entityID = aTx.id"
     let rarity: Int
     let name: String
     let armorType: String

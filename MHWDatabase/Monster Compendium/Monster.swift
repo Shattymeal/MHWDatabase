@@ -9,7 +9,7 @@
 import UIKit
 
 class Monster: MHEntity, Queryable {
-    static var selectQuery: String = "select m.id, m.size, mt.name, mt.description mdesc from monster m inner join monster_text mt on m.id = mt.id"
+    static var selectQuery: String = "select m.id entityID, m.size, mt.name, mt.description mdesc from monster m inner join monster_text mt on entityID = mt.id"
 
     let isLarge: Bool
     let name: String

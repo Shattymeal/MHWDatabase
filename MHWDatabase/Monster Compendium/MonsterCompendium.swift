@@ -10,13 +10,13 @@ import UIKit
 import RxSwift
 
 protocol MonsterDataAccess {
-    func getMonsters(chunk: [Int]?) -> PublishSubject<Monster>?
+    func getMonsters(ids: [Int]?) -> PublishSubject<Monster>?
 }
 
 class MonsterCompendium: NSObject {
     var dataAccess: MonsterDataAccess = DBAccess()
     
-    func getMonsters(chunk: [Int]?) -> PublishSubject<Monster>? {
-        return self.dataAccess.getMonsters(chunk: chunk)
+    func getMonsters(ids: [Int]?) -> PublishSubject<Monster>? {
+        return self.dataAccess.getMonsters(ids: ids)
     }
 }

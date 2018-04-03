@@ -15,6 +15,8 @@
 		B129514F207003FA00ABEB4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B129514D207003FA00ABEB4D /* LaunchScreen.storyboard */; };
 		B129515A207003FA00ABEB4D /* MHWDatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1295159207003FA00ABEB4D /* MHWDatabaseTests.swift */; };
 		B1295165207003FA00ABEB4D /* MHWDatabaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1295164207003FA00ABEB4D /* MHWDatabaseUITests.swift */; };
+		B15726282073185B00FC023A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15726272073185B00FC023A /* Item.swift */; };
+		B157262A2073196000FC023A /* ItemShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15726292073196000FC023A /* ItemShop.swift */; };
 		B16DCF102070089C00134BE3 /* mhw.db in Resources */ = {isa = PBXBuildFile; fileRef = B16DCF0F2070089C00134BE3 /* mhw.db */; };
 		B17E01C8207017E00051E75A /* MonsterCompendium.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17E01C7207017E00051E75A /* MonsterCompendium.swift */; };
 		B17E01CA207017F60051E75A /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17E01C9207017F60051E75A /* Monster.swift */; };
@@ -62,6 +64,8 @@
 		B1295160207003FA00ABEB4D /* MHWDatabaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MHWDatabaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1295164207003FA00ABEB4D /* MHWDatabaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHWDatabaseUITests.swift; sourceTree = "<group>"; };
 		B1295166207003FA00ABEB4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B15726272073185B00FC023A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		B15726292073196000FC023A /* ItemShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemShop.swift; sourceTree = "<group>"; };
 		B16DCF0F2070089C00134BE3 /* mhw.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = mhw.db; path = DB/mhw.db; sourceTree = "<group>"; };
 		B17E01C6207016B90051E75A /* MHWDatabase-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MHWDatabase-BridgingHeader.h"; sourceTree = SOURCE_ROOT; };
 		B17E01C7207017E00051E75A /* MonsterCompendium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterCompendium.swift; sourceTree = "<group>"; };
@@ -140,6 +144,7 @@
 		B1295143207003FA00ABEB4D /* MHWDatabase */ = {
 			isa = PBXGroup;
 			children = (
+				B15726262073184500FC023A /* Item Shop */,
 				B187961A207036100094BD49 /* Weapon Shop */,
 				B1879614207026FE0094BD49 /* MHEntity.swift */,
 				B1DEA6F9207019D6004AD091 /* DBAccess.swift */,
@@ -174,6 +179,15 @@
 				B1295166207003FA00ABEB4D /* Info.plist */,
 			);
 			path = MHWDatabaseUITests;
+			sourceTree = "<group>";
+		};
+		B15726262073184500FC023A /* Item Shop */ = {
+			isa = PBXGroup;
+			children = (
+				B15726272073185B00FC023A /* Item.swift */,
+				B15726292073196000FC023A /* ItemShop.swift */,
+			);
+			path = "Item Shop";
 			sourceTree = "<group>";
 		};
 		B18796112070258B0094BD49 /* Armor Shop */ = {
@@ -412,6 +426,7 @@
 			files = (
 				B1DEA6FC20701B47004AD091 /* MonsterDBAccess.swift in Sources */,
 				B187962020703A720094BD49 /* WeaponShopDataAccess.swift in Sources */,
+				B157262A2073196000FC023A /* ItemShop.swift in Sources */,
 				B17E01CA207017F60051E75A /* Monster.swift in Sources */,
 				B1DEA6FA207019D6004AD091 /* DBAccess.swift in Sources */,
 				B1879615207026FE0094BD49 /* MHEntity.swift in Sources */,
@@ -420,6 +435,7 @@
 				B1295147207003FA00ABEB4D /* ViewController.swift in Sources */,
 				B187961E207039520094BD49 /* WeaponShop.swift in Sources */,
 				B17E01C8207017E00051E75A /* MonsterCompendium.swift in Sources */,
+				B15726282073185B00FC023A /* Item.swift in Sources */,
 				B187961720702F340094BD49 /* ArmorShop.swift in Sources */,
 				B1295145207003FA00ABEB4D /* AppDelegate.swift in Sources */,
 				B1879613207025EF0094BD49 /* Armor.swift in Sources */,
