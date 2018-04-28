@@ -18,34 +18,34 @@ class MainMenuTableViewController: BaseTableViewController {
         title = "MONSTER HUNTER WORLD DATABASE"
         register(BaseTableViewCell.self)
         addCellModels([
-            BaseTableViewCellModel(reuseId: "BaseTableViewCell", text: "Quests", imageName: "", selectedBlock: {
+            BaseTableViewCellModel(reuseId: BaseTableViewCell.reuseId(), text: "Quests", imageName: "", selectedBlock: {
                 print("quests selected!")
             }),
-            BaseTableViewCellModel(reuseId: "BaseTableViewCell", text: "Monsters", imageName: "", selectedBlock: {
+            BaseTableViewCellModel(reuseId: BaseTableViewCell.reuseId(), text: "Monsters", imageName: "", selectedBlock: {
                 print("monsters selected!")
             }),
-            BaseTableViewCellModel(reuseId: "BaseTableViewCell", text: "Weapons", imageName: "", selectedBlock: {
+            BaseTableViewCellModel(reuseId: BaseTableViewCell.reuseId(), text: "Weapons", imageName: "", selectedBlock: {
                 self.navigationController?.pushViewController(WeaponsMenuTableViewController(), animated: true)
             }),
-            BaseTableViewCellModel(reuseId: "BaseTableViewCell", text: "Armor", imageName: "", selectedBlock: {
+            BaseTableViewCellModel(reuseId: BaseTableViewCell.reuseId(), text: "Armor", imageName: "", selectedBlock: {
                 print("ARMOR selected!")
             }),
-            BaseTableViewCellModel(reuseId: "BaseTableViewCell", text: "Items", imageName: "", selectedBlock: {
+            BaseTableViewCellModel(reuseId: BaseTableViewCell.reuseId(), text: "Items", imageName: "", selectedBlock: {
                 print("ITEMS selected!")
             }),
-            BaseTableViewCellModel(reuseId: "BaseTableViewCell", text: "Combinations", imageName: "", selectedBlock: {
+            BaseTableViewCellModel(reuseId: BaseTableViewCell.reuseId(), text: "Combinations", imageName: "", selectedBlock: {
                 print("COMBOS selected!")
             }),
-            BaseTableViewCellModel(reuseId: "BaseTableViewCell", text: "Locations", imageName: "", selectedBlock: {
+            BaseTableViewCellModel(reuseId: BaseTableViewCell.reuseId(), text: "Locations", imageName: "", selectedBlock: {
                 print("LOCS selected!")
             }),
-            BaseTableViewCellModel(reuseId: "BaseTableViewCell", text: "Decorations", imageName: "", selectedBlock: {
+            BaseTableViewCellModel(reuseId: BaseTableViewCell.reuseId(), text: "Decorations", imageName: "", selectedBlock: {
                 print("DECORS selected!")
             }),
-            BaseTableViewCellModel(reuseId: "BaseTableViewCell", text: "Skills", imageName: "", selectedBlock: {
+            BaseTableViewCellModel(reuseId: BaseTableViewCell.reuseId(), text: "Skills", imageName: "", selectedBlock: {
                 print("SKILLS selected!")
             }),
-            BaseTableViewCellModel(reuseId: "BaseTableViewCell", text: "Palico", imageName: "", selectedBlock: {
+            BaseTableViewCellModel(reuseId: BaseTableViewCell.reuseId(), text: "Palico", imageName: "", selectedBlock: {
                 print("PALICO selected!")
             })
         ])

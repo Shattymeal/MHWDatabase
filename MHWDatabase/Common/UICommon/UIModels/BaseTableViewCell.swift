@@ -21,7 +21,7 @@ class BaseTableViewCell: UITableViewCell, TableViewCellProtocol {
     }
 
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        super.init(style: .default, reuseIdentifier: "BaseTableViewCell")
+        super.init(style: .default, reuseIdentifier: type(of: self).reuseId())
         self.model = BaseTableViewCellModel()
         initialize()
     }
@@ -31,7 +31,7 @@ class BaseTableViewCell: UITableViewCell, TableViewCellProtocol {
     }
 
     init(cellModel: BaseTableViewCellModel?) {
-        super.init(style: .default, reuseIdentifier: "BaseTableViewCell")
+        super.init(style: .default, reuseIdentifier: type(of: self).reuseId())
         self.model = cellModel
         initialize()
     }
@@ -52,8 +52,15 @@ class BaseTableViewCell: UITableViewCell, TableViewCellProtocol {
     }
 
     func reuseId() -> String {
-        let reuseId = "BaseTableViewCell"
-        model?.reuseId = reuseId
-        return reuseId
+        return type(of: self).reuseId()
+    }
+
+    // Helpers
+    func setReuseId() {
+        model?.reuseId = type(of: self).reuseId()
+    }
+
+    class func reuseId() -> String {
+        return "BaseTableViewCell"
     }
 }

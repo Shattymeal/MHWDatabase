@@ -13,9 +13,7 @@ import UIKit
  */
 class WeaponTypeTableViewCell: BaseTableViewCell {
     // TableViewCellProtocol
-    override func reuseId() -> String {
-        let reuseId = "WeaponTableViewCell"
-        model?.reuseId = reuseId
-        return reuseId
+    override class func reuseId() -> String {
+        return "WeaponTypeTableViewCell"
     }
 }

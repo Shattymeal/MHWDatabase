@@ -34,9 +34,9 @@
 		C99EAAF320929CA200BF4831 /* BaseTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99EAAF220929CA200BF4831 /* BaseTableViewCellModel.swift */; };
 		C99EAAF520929DDA00BF4831 /* MainMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99EAAF420929DDA00BF4831 /* MainMenuTableViewController.swift */; };
 		C99EAAF72092A00B00BF4831 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99EAAF62092A00B00BF4831 /* BaseTableViewCell.swift */; };
-		C99EAAF92092A37D00BF4831 /* TableViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99EAAF82092A37D00BF4831 /* TableViewCellProtocol.swift */; };
 		C99EAB002093E01B00BF4831 /* WeaponTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99EAAFF2093E01B00BF4831 /* WeaponTypeTableViewCell.swift */; };
 		C99EAB022093E56800BF4831 /* WeaponsMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99EAB012093E56800BF4831 /* WeaponsMenuTableViewController.swift */; };
+		C99EAB042093EDE300BF4831 /* TableViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99EAB032093EDE300BF4831 /* TableViewCellProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,9 +92,9 @@
 		C99EAAF220929CA200BF4831 /* BaseTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCellModel.swift; sourceTree = "<group>"; };
 		C99EAAF420929DDA00BF4831 /* MainMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuTableViewController.swift; sourceTree = "<group>"; };
 		C99EAAF62092A00B00BF4831 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
-		C99EAAF82092A37D00BF4831 /* TableViewCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellProtocol.swift; sourceTree = "<group>"; };
 		C99EAAFF2093E01B00BF4831 /* WeaponTypeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponTypeTableViewCell.swift; sourceTree = "<group>"; };
 		C99EAB012093E56800BF4831 /* WeaponsMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsMenuTableViewController.swift; sourceTree = "<group>"; };
+		C99EAB032093EDE300BF4831 /* TableViewCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellProtocol.swift; sourceTree = "<group>"; };
 		ECDD500BE37E3AA826F23557 /* Pods-MHWDatabase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHWDatabase.release.xcconfig"; path = "Pods/Target Support Files/Pods-MHWDatabase/Pods-MHWDatabase.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -248,8 +248,8 @@
 		C99EAAE62091374000BF4831 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C99EAB032093EDE300BF4831 /* TableViewCellProtocol.swift */,
 				C99EAAF220929CA200BF4831 /* BaseTableViewCellModel.swift */,
-				C99EAAF82092A37D00BF4831 /* TableViewCellProtocol.swift */,
 				C99EAAE72091375200BF4831 /* UICommon */,
 			);
 			path = Common;
@@ -469,7 +469,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C99EAAF92092A37D00BF4831 /* TableViewCellProtocol.swift in Sources */,
 				B1DEA6FC20701B47004AD091 /* MonsterDBAccess.swift in Sources */,
 				B187962020703A720094BD49 /* WeaponShopDataAccess.swift in Sources */,
 				B157262A2073196000FC023A /* ItemShop.swift in Sources */,
@@ -483,6 +482,7 @@
 				C99EAAF72092A00B00BF4831 /* BaseTableViewCell.swift in Sources */,
 				B187961C207036BA0094BD49 /* Weapon.swift in Sources */,
 				B1295147207003FA00ABEB4D /* ViewController.swift in Sources */,
+				C99EAB042093EDE300BF4831 /* TableViewCellProtocol.swift in Sources */,
 				B187961E207039520094BD49 /* WeaponShop.swift in Sources */,
 				B17E01C8207017E00051E75A /* MonsterCompendium.swift in Sources */,
 				B15726282073185B00FC023A /* Item.swift in Sources */,
@@ -663,7 +663,7 @@
 				DEVELOPMENT_TEAM = L3945CAPSN;
 				INFOPLIST_FILE = MHWDatabase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MHW.MHWDatabase;
+				PRODUCT_BUNDLE_IDENTIFIER = MHW.MHWDatabase.Kelly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "MHWDatabase-BridgingHeader.h";
@@ -682,7 +682,7 @@
 				DEVELOPMENT_TEAM = L3945CAPSN;
 				INFOPLIST_FILE = MHWDatabase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MHW.MHWDatabase;
+				PRODUCT_BUNDLE_IDENTIFIER = MHW.MHWDatabase.Kelly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "MHWDatabase-BridgingHeader.h";
