@@ -40,6 +40,7 @@ class BaseTableViewCell: UITableViewCell, TableViewCellProtocol {
         self.contentView.backgroundColor = .darkGray
         self.textLabel?.font = UIFont.boldSystemFont(ofSize: 17)
         self.textLabel?.textColor = .white
+        setReuseId()
     }
 
     override func prepareForReuse() {
