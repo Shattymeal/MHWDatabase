@@ -30,6 +30,13 @@
 		B187962020703A720094BD49 /* WeaponShopDataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B187961F20703A720094BD49 /* WeaponShopDataAccess.swift */; };
 		B1DEA6FA207019D6004AD091 /* DBAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DEA6F9207019D6004AD091 /* DBAccess.swift */; };
 		B1DEA6FC20701B47004AD091 /* MonsterDBAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DEA6FB20701B47004AD091 /* MonsterDBAccess.swift */; };
+		C99EAAEA2091377F00BF4831 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99EAAE92091377F00BF4831 /* BaseTableViewController.swift */; };
+		C99EAAF320929CA200BF4831 /* BaseTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99EAAF220929CA200BF4831 /* BaseTableViewCellModel.swift */; };
+		C99EAAF520929DDA00BF4831 /* MainMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99EAAF420929DDA00BF4831 /* MainMenuTableViewController.swift */; };
+		C99EAAF72092A00B00BF4831 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99EAAF62092A00B00BF4831 /* BaseTableViewCell.swift */; };
+		C99EAB002093E01B00BF4831 /* WeaponTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99EAAFF2093E01B00BF4831 /* WeaponTypeTableViewCell.swift */; };
+		C99EAB022093E56800BF4831 /* WeaponsMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99EAB012093E56800BF4831 /* WeaponsMenuTableViewController.swift */; };
+		C99EAB042093EDE300BF4831 /* TableViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99EAB032093EDE300BF4831 /* TableViewCellProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +88,13 @@
 		B1DEA6F9207019D6004AD091 /* DBAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBAccess.swift; sourceTree = "<group>"; };
 		B1DEA6FB20701B47004AD091 /* MonsterDBAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterDBAccess.swift; sourceTree = "<group>"; };
 		C3E8080104BBFC078BE1D02A /* Pods-MHWDatabase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHWDatabase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MHWDatabase/Pods-MHWDatabase.debug.xcconfig"; sourceTree = "<group>"; };
+		C99EAAE92091377F00BF4831 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		C99EAAF220929CA200BF4831 /* BaseTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCellModel.swift; sourceTree = "<group>"; };
+		C99EAAF420929DDA00BF4831 /* MainMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuTableViewController.swift; sourceTree = "<group>"; };
+		C99EAAF62092A00B00BF4831 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		C99EAAFF2093E01B00BF4831 /* WeaponTypeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponTypeTableViewCell.swift; sourceTree = "<group>"; };
+		C99EAB012093E56800BF4831 /* WeaponsMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponsMenuTableViewController.swift; sourceTree = "<group>"; };
+		C99EAB032093EDE300BF4831 /* TableViewCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellProtocol.swift; sourceTree = "<group>"; };
 		ECDD500BE37E3AA826F23557 /* Pods-MHWDatabase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHWDatabase.release.xcconfig"; path = "Pods/Target Support Files/Pods-MHWDatabase/Pods-MHWDatabase.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,6 +158,7 @@
 		B1295143207003FA00ABEB4D /* MHWDatabase */ = {
 			isa = PBXGroup;
 			children = (
+				C99EAAE62091374000BF4831 /* Common */,
 				B15726262073184500FC023A /* Item Shop */,
 				B187961A207036100094BD49 /* Weapon Shop */,
 				B1879614207026FE0094BD49 /* MHEntity.swift */,
@@ -151,6 +166,7 @@
 				B18796112070258B0094BD49 /* Armor Shop */,
 				B1DEA6F8207019B6004AD091 /* Monster Compendium */,
 				B1295144207003FA00ABEB4D /* AppDelegate.swift */,
+				C99EAAF420929DDA00BF4831 /* MainMenuTableViewController.swift */,
 				B1295146207003FA00ABEB4D /* ViewController.swift */,
 				B16DCF0F2070089C00134BE3 /* mhw.db */,
 				B1295148207003FA00ABEB4D /* Main.storyboard */,
@@ -203,6 +219,7 @@
 		B187961A207036100094BD49 /* Weapon Shop */ = {
 			isa = PBXGroup;
 			children = (
+				C99EAAFC2093DD9C00BF4831 /* WeaponsUI */,
 				B187961B207036BA0094BD49 /* Weapon.swift */,
 				B187961D207039520094BD49 /* WeaponShop.swift */,
 				B187961F20703A720094BD49 /* WeaponShopDataAccess.swift */,
@@ -228,6 +245,50 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C99EAAE62091374000BF4831 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C99EAB032093EDE300BF4831 /* TableViewCellProtocol.swift */,
+				C99EAAF220929CA200BF4831 /* BaseTableViewCellModel.swift */,
+				C99EAAE72091375200BF4831 /* UICommon */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C99EAAE72091375200BF4831 /* UICommon */ = {
+			isa = PBXGroup;
+			children = (
+				C99EAAEB2092966D00BF4831 /* UIModels */,
+				C99EAAE82091375F00BF4831 /* ViewControllers */,
+			);
+			path = UICommon;
+			sourceTree = "<group>";
+		};
+		C99EAAE82091375F00BF4831 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C99EAAE92091377F00BF4831 /* BaseTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C99EAAEB2092966D00BF4831 /* UIModels */ = {
+			isa = PBXGroup;
+			children = (
+				C99EAAF62092A00B00BF4831 /* BaseTableViewCell.swift */,
+			);
+			path = UIModels;
+			sourceTree = "<group>";
+		};
+		C99EAAFC2093DD9C00BF4831 /* WeaponsUI */ = {
+			isa = PBXGroup;
+			children = (
+				C99EAAFF2093E01B00BF4831 /* WeaponTypeTableViewCell.swift */,
+				C99EAB012093E56800BF4831 /* WeaponsMenuTableViewController.swift */,
+			);
+			path = WeaponsUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -240,7 +301,6 @@
 				B129513E207003FA00ABEB4D /* Frameworks */,
 				B129513F207003FA00ABEB4D /* Resources */,
 				B38E8C8C20C1F5A083A1E82D /* [CP] Embed Pods Frameworks */,
-				589ACDE2162FEA415AEC1B25 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -362,21 +422,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		589ACDE2162FEA415AEC1B25 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MHWDatabase/Pods-MHWDatabase-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5FE963F10AADAEEA63649FEF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -428,18 +473,25 @@
 				B187962020703A720094BD49 /* WeaponShopDataAccess.swift in Sources */,
 				B157262A2073196000FC023A /* ItemShop.swift in Sources */,
 				B17E01CA207017F60051E75A /* Monster.swift in Sources */,
+				C99EAB002093E01B00BF4831 /* WeaponTypeTableViewCell.swift in Sources */,
+				C99EAAEA2091377F00BF4831 /* BaseTableViewController.swift in Sources */,
+				C99EAB022093E56800BF4831 /* WeaponsMenuTableViewController.swift in Sources */,
 				B1DEA6FA207019D6004AD091 /* DBAccess.swift in Sources */,
 				B1879615207026FE0094BD49 /* MHEntity.swift in Sources */,
 				B1879610207023AE0094BD49 /* SearchTableViewController.swift in Sources */,
+				C99EAAF72092A00B00BF4831 /* BaseTableViewCell.swift in Sources */,
 				B187961C207036BA0094BD49 /* Weapon.swift in Sources */,
 				B1295147207003FA00ABEB4D /* ViewController.swift in Sources */,
+				C99EAB042093EDE300BF4831 /* TableViewCellProtocol.swift in Sources */,
 				B187961E207039520094BD49 /* WeaponShop.swift in Sources */,
 				B17E01C8207017E00051E75A /* MonsterCompendium.swift in Sources */,
 				B15726282073185B00FC023A /* Item.swift in Sources */,
 				B187961720702F340094BD49 /* ArmorShop.swift in Sources */,
 				B1295145207003FA00ABEB4D /* AppDelegate.swift in Sources */,
 				B1879613207025EF0094BD49 /* Armor.swift in Sources */,
+				C99EAAF320929CA200BF4831 /* BaseTableViewCellModel.swift in Sources */,
 				B187961920702FBB0094BD49 /* ArmorShopDataAccess.swift in Sources */,
+				C99EAAF520929DDA00BF4831 /* MainMenuTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,12 +658,14 @@
 			baseConfigurationReference = C3E8080104BBFC078BE1D02A /* Pods-MHWDatabase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CP47LL7RJ2;
+				DEVELOPMENT_TEAM = L3945CAPSN;
 				INFOPLIST_FILE = MHWDatabase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MHW.MHWDatabase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "MHWDatabase-BridgingHeader.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -623,12 +677,14 @@
 			baseConfigurationReference = ECDD500BE37E3AA826F23557 /* Pods-MHWDatabase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CP47LL7RJ2;
+				DEVELOPMENT_TEAM = L3945CAPSN;
 				INFOPLIST_FILE = MHWDatabase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MHW.MHWDatabase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "MHWDatabase-BridgingHeader.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
